@@ -1,0 +1,3 @@
+[submodule "hacker-laws"]
+	path = hacker-laws
+	url = git@github.com:dwmkerr/hacker-laws.git
