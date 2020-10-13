@@ -4,7 +4,7 @@ Laws, Theories, Principles and Patterns that developers will find useful.
 
 [Translations](#translations): [🇮🇩](./translations/id.md) [🇧🇷](./translations/pt-BR.md) [🇨🇳](https://github.com/nusr/hacker-laws-zh) [🇩🇪](./translations/de.md) [🇫🇷](./translations/fr.md) [🇬🇷](./translations/el.md) [🇮🇹](https://github.com/csparpa/hacker-laws-it) [🇱🇻](./translations/lv.md) [🇰🇷](https://github.com/codeanddonuts/hacker-laws-kr) [🇷🇺](https://github.com/solarrust/hacker-laws) [🇪🇸](./translations/es-ES.md) [🇹🇷](https://github.com/umutphp/hacker-laws-tr) [🇯🇵](./translations/jp.md)
 
-Like this project? Please considering [sponsoring me](https://github.com/sponsors/dwmkerr) and the [translators](#translations). Also check out this podcast on [The Changelog - Laws for Hackers to Live By](https://changelog.com/podcast/403) to learn more about the project!
+Like this project? Please considering [sponsoring me](https://github.com/sponsors/dwmkerr) and the [translators](#translations). Also check out this podcast on [The Changelog - Laws for Hackers to Live By](https://changelog.com/podcast/403) to learn more about the project! You can also [download the latest PDF eBook](https://github.com/dwmkerr/hacker-laws/releases/latest/download/hacker-laws.pdf).
 
 ---
 
@@ -49,6 +49,7 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
     * [Wadler's Law](#wadlers-law)
     * [Wheaton's Law](#wheatons-law)
 * [Principles](#principles)
+    * [All Models Are Wrong (George Box's Law)](#all-models-are-wrong-george-boxs-law)
     * [Chesterson's Fence](#chestersons-fence)
     * [The Dead Sea Effect](#the-dead-sea-effect)
     * [The Dilbert Principle](#the-dilbert-principle)
@@ -68,6 +69,7 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
     * [The Fallacies of Distributed Computing](#the-fallacies-of-distributed-computing)
 * [Reading List](#reading-list)
 * [Online Resources](#online-resources)
+* [PDF eBook](#pdf-ebook)
 * [Podcast](#podcast)
 * [Translations](#translations)
 * [Related Projects](#related-projects)
@@ -641,6 +643,22 @@ Coined by Wil Wheaton (Star Trek: The Next Generation, The Big Bang Theory), thi
 
 Principles are generally more likely to be guidelines relating to design.
 
+### All Models Are Wrong (George Box's Law)
+
+[All Models Are Wrong](https://en.wikipedia.org/wiki/All_models_are_wrong)
+
+> All models are wrong, but some are useful.
+>
+> _George Box_
+
+This principle suggests that all models of systems are flawed, but that as long as they are not _too_ flawed they may be useful. This principle has its roots in statistics but applies to scientific and computing models as well.
+
+A fundamental requirement of most software is to model a system of some kind. Regardless of whether the system being modeled is a computer network, a library, a graph of social connections or any other kind of system, the designer will have to decide an appropriate level of detail to model. Excessive detail may lead to too much complexity, too little detail may prevent the model from being functional.
+
+See also:
+
+- [The Law of Leaky Abstractions](#the-law-of-leaky-abstractions)
+
 ### Chesterson's Fence
 
 [Chesterson's Fence on Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence)
@@ -925,7 +943,6 @@ See also:
 
 - [Foraging for the Fallacies of Distributed Computing (Part 1) - Vaidehi Joshi
  on Medium](https://medium.com/baseds/foraging-for-the-fallacies-of-distributed-computing-part-1-1b35c3b85b53)
-- [Deutsch's Fallacies, 10 Years After](http://java.sys-con.com/node/38665)
 
 ## Reading List
 
@@ -944,6 +961,12 @@ If you have found these concepts interesting, you may enjoy the following books.
 Some useful resources and reading.
 
 - [CB Insights: 8 Laws Driving Success In Tech: Amazon's 2-Pizza Rule, The 80/20 Principle, & More](https://www.cbinsights.com/research/report/tech-laws-success-failure) - an interesting write up of some laws which have been highly influential in technology.
+
+## PDF eBook
+
+The project is available as a PDF eBook, [download the latest PDF eBook with this link](https://github.com/dwmkerr/hacker-laws/releases/latest/download/hacker-laws.pdf) or check the [release](https://github.com/dwmkerr/hacker-laws/releases) page for older versions.
+
+A new version of the eBook is created automatically when a new version tag is pushed.
 
 ## Podcast
 
@@ -977,6 +1000,7 @@ If you would like to update a translation, just [open a pull request](https://gi
 
 - [Tip of the Day](https://tips.darekkay.com/html/hacker-laws-en.html) - Receive a daily hacker law/principle.
 - [Hacker Laws CLI](https://github.com/umutphp/hacker-laws-cli) - List, view and see random laws from the terminal!
+- [Hacker Laws Action](https://github.com/marketplace/actions/hacker-laws-action) - Adds a random Hacker Law to a pull request as a small gift for the contributor, thanks [Umut Işık](https://github.com/umutphp)
 
 ## Contributing
 
