@@ -2,7 +2,7 @@
 
 Laws, Theories, Principles and Patterns that developers will find useful.
 
-[Translations](#translations): [🇮🇩](./translations/id.md) [🇧🇷](./translations/pt-BR.md) [🇨🇳](https://github.com/nusr/hacker-laws-zh) [🇩🇪](./translations/de.md) [🇫🇷](./translations/fr.md) [🇬🇷](./translations/el.md) [🇮🇹](https://github.com/csparpa/hacker-laws-it) [🇱🇻](./translations/lv.md) [🇰🇷](https://github.com/codeanddonuts/hacker-laws-kr) [🇷🇺](https://github.com/solarrust/hacker-laws) [🇪🇸](./translations/es-ES.md) [🇹🇷](https://github.com/umutphp/hacker-laws-tr) [🇯🇵](./translations/jp.md)
+[Translations](#translations): [🇮🇩](./translations/id.md) [🇧🇷](./translations/pt-BR.md) [🇨🇳](https://github.com/nusr/hacker-laws-zh) [🇩🇪](./translations/de.md) [🇫🇷](./translations/fr.md) [🇬🇷](./translations/el.md) [🇮🇹](https://github.com/csparpa/hacker-laws-it) [🇱🇻](./translations/lv.md) [🇰🇷](https://github.com/codeanddonuts/hacker-laws-kr) [🇷🇺](https://github.com/solarrust/hacker-laws) [🇪🇸](./translations/es-ES.md) [🇹🇷](https://github.com/umutphp/hacker-laws-tr) [🇯🇵](./translations/jp.md) [🇺🇦](./translations/uk.md)
 
 Like this project? Please considering [sponsoring me](https://github.com/sponsors/dwmkerr) and the [translators](#translations). Also check out this podcast on [The Changelog - Laws for Hackers to Live By](https://changelog.com/podcast/403) to learn more about the project! You can also [download the latest PDF eBook](https://github.com/dwmkerr/hacker-laws/releases/latest/download/hacker-laws.pdf).
 
@@ -20,6 +20,7 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
     * [Conway's Law](#conways-law)
     * [Cunningham's Law](#cunninghams-law)
     * [Dunbar's Number](#dunbars-number)
+    * [The Dunning-Kruger Effect](#the-dunning-kruger-effect)
     * [Fitts' Law](#fitts-law)
     * [Gall's Law](#galls-law)
     * [Goodhart's Law](#goodharts-law)
@@ -139,7 +140,7 @@ See also:
 
 Examples:
 
-- [The Pragmatic Programming: Software Entropy](https://pragprog.com/the-pragmatic-programmer/extracts/software-entropy)
+- [The Pragmatic Programming: Software Entropy](https://flylib.com/books/en/1.315.1.15/1/)
 - [Coding Horror: The Broken Window Theory](https://blog.codinghorror.com/the-broken-window-theory/)
 - [OpenSource: Joy of Programming - The Broken Window Theory](https://opensourceforu.com/2011/05/joy-of-programming-broken-window-theory/)
 
@@ -168,7 +169,7 @@ The CAP Theorem (defined by Eric Brewer) states that for a distributed data stor
 - Availability: when reading data, every request receives _a non error response_, without the guarantee that it is the _most recent_ data
 - Partition Tolerance: when an arbitrary number of network requests between nodes fail, the system continues to operate as expected
 
-The core of the reasoning is as follows. It is impossible to guarantee that a network partition will not occur (see [The Fallacies of Distributed Computing](#The_Fallacies_of_Distributed_Computing)). Therefore in the case of a partition we can either cancel the operation (increasing consistency and decreasing availability) or proceed (increasing availability but decreasing consistency).
+The core of the reasoning is as follows. It is impossible to guarantee that a network partition will not occur (see [The Fallacies of Distributed Computing](#the-fallacies-of-distributed-computing)). Therefore in the case of a partition we can either cancel the operation (increasing consistency and decreasing availability) or proceed (increasing availability but decreasing consistency).
 
 The name comes from the first letters of the guarantees (Consistency, Availability, Partition Tolerance). Note that it is very important to be aware that this does _not_ relate to [_ACID_](#TODO), which has a different definition of consistency. More recently, [PACELC](#TODO) theorem has been developed which adds constraints for latency and consistency when the network is _not_ partitioned (i.e. when the system is operating as expected).
 
@@ -181,7 +182,7 @@ Real world examples:
 See also:
 
 - [ACID](#TODO)
-- [The Fallacies of Distributed Computing](#The_Fallacies_of_Distributed_Computing)
+- [The Fallacies of Distributed Computing](#the-fallacies-of-distributed-computing)
 - [PACELC](#TODO)
 
 ### Conway's Law
@@ -217,6 +218,25 @@ Like stable relationships between individuals, a developer's relationship with a
 See also:
 
 - [Conway's Law](#conways-law)
+
+
+### The Dunning-Kruger Effect
+
+[The Dunning-Kruger Effect on Wikipedia](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect)
+
+> If you're incompetent, you can't know you're incompetent... The skills you need to produce a right answer are exactly the skills you need to recognize what a right answer is.
+>
+> ([David Dunning](https://en.wikipedia.org/wiki/David_Dunning))
+
+The Dunning–Kruger effect is a theoretical cognitive bias which was described by David Dunning and Justin Kruger in a 1999 psychological study and paper. The study suggests that people with a low level of ability at a task are likely to overestimate their ability of the task. The proposed reason for this bias is that a sufficient _awareness_ of the complexity of a problem or domain is required for a person to be able to make an informed opinion of their capability to work in that domain.
+
+The Dunning-Kruger effect has sometimes been used to describe a related, but not necessarily implied effect which could be described as "The less a person understands a domain, the more they are likely to believe they can easily solve problems in that domain, as they are more likely to see the domain as _simple_". This more general effect is highly relevant in technology. It would suggest that people who are less familiar with a domain, such as non-technical team members or less experienced team members, are more likely to _underestimate_ the effort required to solve a problem in this space.
+
+As a person's understanding and experience in a domain grows, they may well encounter another effect, which is that they tend to _overestimate_ the ability of _others_ or _underestimate_ their own ability, as they are have become so experienced in the domain. In all cases these effects are _cognitive biases_. As with any bias, an understanding that it may be present will often be sufficient to help avoid the challenges - as when there is awareness of a bias more inputs and opinions can be included to attempt to eliminate these biases. A closely related is the bias of [Illusory superiority](https://en.wikipedia.org/wiki/Illusory_superiority).
+
+Real-world examples:
+
+* [Apple vs. FBI: Why This Anti-Terror Hawk Switched Sides](https://fortune.com/2016/03/10/apple-fbi-lindsay-graham/) - In 2016 Senator Lindsey Graham changed his stance on Apple creating a 'backdoor' in their encryption of devices. Initially Graham had been critical of Apple challenging a request to create a 'backdoor', which he saw as necessary to investigate potential terrorist plots. However, by Graham's own admission, as he learned more about the technical complexity of the domain, he realised that he had assumed it to be far more simple than he had realised, and that such a backdoor could have serious negative consequences. This could potentially be considered an example of the Dunning-Kruger effect - a cyber-security expert would likely understand immediately how such a backdoor could be exploited, as they have deep understanding of the domain, a layperson might assume that phone security is more similar to _physical security_ where the practice of having a 'master key' for law enforcement is possible, but this analogy does not apply sufficiently well to describe modern encryption in cyber-security. 
 
 ### Fitts' Law
 
@@ -399,7 +419,7 @@ See also:
 
 This law simply states that the more people who can see a problem, the higher the likelihood that someone will have seen and solved the problem before, or something very similar.
 
-Although it was originally used to describe the value of open-source models for projects it can be accepted for any kind of software project. It can also be extended to processes - more code reviews, more static analysis and multi-disciplined test processes will make the problems more visible and easy to identify. 
+Although it was originally used to describe the value of open-source models for projects it can be accepted for any kind of software project. It can also be extended to processes - more code reviews, more static analysis and multi-disciplined test processes will make the problems more visible and easy to identify.
 
 A more formal statement can be:
 
@@ -723,7 +743,7 @@ Real-world examples:
 [The Shirky Principle explained](https://kk.org/thetechnium/the-shirky-prin/)
 
 > Institutions will try to preserve the problem to which they are the solution.
-> 
+>
 > _Clay Shirky_
 
 The Shirky Principle suggests that complex solutions - a company, an industry, or a technology - can become so focused on the problem that they are solving, that they can inadvertently perpetuate the problem itself. This may be deliberate (a company striving to find new nuances to a problem which justify continued development of a solution), or inadvertent (being unable or unwilling to accept or build a solution which solves the problem completely or obviates it).
@@ -735,7 +755,7 @@ Related to:
 
 See also:
 
-- [Pareto Principle](#the-pareto-principle)
+- [Pareto Principle](#the-pareto-principle-the-8020-rule)
 
 ### The Peter Principle
 
@@ -894,7 +914,7 @@ See also:
 
 The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided.  Originating in the U.S. Navy in 1960, the phrase has been associated with aircraft engineer Kelly Johnson.
 
-The principle is best exemplified by the story of Johnson handing a team of design engineers a handful of tools, with the challenge that the jet aircraft they were designing must be repairable by an average mechanic in the field under combat conditions with only these tools. Hence, the "stupid" refers to the relationship between the way things break and the sophistication of the tools available to repair them, not the capabilities of the engineers themselves. 
+The principle is best exemplified by the story of Johnson handing a team of design engineers a handful of tools, with the challenge that the jet aircraft they were designing must be repairable by an average mechanic in the field under combat conditions with only these tools. Hence, the "stupid" refers to the relationship between the way things break and the sophistication of the tools available to repair them, not the capabilities of the engineers themselves.
 
 See also:
 
@@ -993,6 +1013,7 @@ Thanks to a number of wonderful contributors, Hacker Laws is available in a numb
 | [🇷🇺 Русская версия / Russian](https://github.com/solarrust/hacker-laws) | [Alena Batitskaya](https://github.com/solarrust) | Partially complete |
 | [🇪🇸 Castellano / Spanish](./translations/es-ES.md) | [Manuel Rubio](https://github.com/manuel-rubio) ([Sponsor](https://github.com/sponsors/manuel-rubio)) | Partially complete |
 | [🇹🇷 Türkçe / Turkish](https://github.com/umutphp/hacker-laws-tr) | [Umut Işık](https://github.com/umutphp) | [![gitlocalized ](https://gitlocalize.com/repo/2513/tr/badge.svg)](https://gitlocalize.com/repo/2513/tr?utm_source=badge) |
+| [🇺🇦 українська мова / Ukrainian](./translations/uk.md) | [Nazar](https://github.com/troyane), [Helga Lastivka](https://github.com/HelgaLastivka) | [![gitlocalized ](https://gitlocalize.com/repo/2513/uk/badge.svg)](https://gitlocalize.com/repo/2513/uk?utm_source=badge) |
 
 If you would like to update a translation, just [open a pull request](https://github.com/dwmkerr/hacker-laws/pulls). If you want to add a new language, log onto [GitLocalize](https://gitlocalize.com/) to create an account, then open an issue asking to administer the language and I will add you to the project! It would also be super helpful if you can open a pull request which updates the table above and link at the top of the file.
 
