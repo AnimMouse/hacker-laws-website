@@ -45,13 +45,14 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
     * [The Law of Leaky Abstractions](#the-law-of-leaky-abstractions)
     * [The Law of Triviality](#the-law-of-triviality)
     * [The Unix Philosophy](#the-unix-philosophy)
+    * [The Scout Rule](#the-scout-rule)
     * [The Spotify Model](#the-spotify-model)
     * [The Two Pizza Rule](#the-two-pizza-rule)
     * [Wadler's Law](#wadlers-law)
     * [Wheaton's Law](#wheatons-law)
 * [Principles](#principles)
     * [All Models Are Wrong (George Box's Law)](#all-models-are-wrong-george-boxs-law)
-    * [Chesterson's Fence](#chestersons-fence)
+    * [Chesterton's Fence](#chestertons-fence)
     * [The Dead Sea Effect](#the-dead-sea-effect)
     * [The Dilbert Principle](#the-dilbert-principle)
     * [The Pareto Principle (The 80/20 Rule)](#the-pareto-principle-the-8020-rule)
@@ -606,6 +607,26 @@ The Unix Philosophy is that software components should be small, and focused on 
 
 Modern practices like 'Microservice Architecture' can be thought of as an application of this law, where services are small, focused and do one specific thing, allowing complex behaviour to be composed of simple building blocks.
 
+### The Scout Rule
+
+[The Scout Rule on O'Reilly](https://www.oreilly.com/library/view/97-things-every/9780596809515/ch08.html)
+
+> Always leave the code better than you found it.
+>
+> (Robert C. Martin (Uncle Bob))
+
+Based on the "Scout Rule", which is "always leave the campground cleaner than you found it", the Scout Rule in programming is simply "always leave the code cleaner than you found it".
+
+This was introduced in the first chapter of the book [Clean Code](https://www.goodreads.com/book/show/3735293-clean-code) by Bob Martin. The rule suggests that developers should perform 'optimistic refactoring', which means to endeavour to improve the overall quality of the code when you work on it. If you see a mistake, attempt to fix it or clean it up. However, when making changes to code which seems incorrect, it may be worth remembering [Chesterton's Fence](#chestertons-fence)!
+
+See also:
+
+- [Reading List: Clean Code](#reading-list)
+- [Chesterton's Fence](#chestertons-fence)
+- [The Broken Windows Theory](#broken-windows-theory)
+
+https://www.amazon.sg/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
+
 ### The Spotify Model
 
 [The Spotify Model on Spotify Labs](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
@@ -679,15 +700,15 @@ See also:
 
 - [The Law of Leaky Abstractions](#the-law-of-leaky-abstractions)
 
-### Chesterson's Fence
+### Chesterton's Fence
 
-[Chesterson's Fence on Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence)
+[Chesterton's Fence on Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence)
 
 > Reforms should not be made until the reasoning behind the existing state of affairs is understood.
 
-This principle is relevant in software engineering when removing technical debt. Each line of a program was originally written by someone for some reason. Chesterson's Fence suggests that one should try to understand the context and meaning of the code fully, before changing or removing it, even if at first glance it seems redundant or incorrect.
+This principle is relevant in software engineering when removing technical debt. Each line of a program was originally written by someone for some reason. Chesterton's Fence suggests that one should try to understand the context and meaning of the code fully, before changing or removing it, even if at first glance it seems redundant or incorrect.
 
-The name of this principle comes from a story by [G.K. Chesterson](https://en.wikipedia.org/wiki/G._K._Chesterton). A man comes across a fence crossing the middle of the road. He complains to the mayor that this useless fence is getting in the way, and asks to remove it. The mayor asks why the fence is there in the first place. When the man says he doesn't know, the mayor says, "If you don't know its purpose, I certainly won't let you remove it. Go and find out the use of it, and then I may let you destroy it."
+The name of this principle comes from a story by [G.K. Chesterton](https://en.wikipedia.org/wiki/G._K._Chesterton). A man comes across a fence crossing the middle of the road. He complains to the mayor that this useless fence is getting in the way, and asks to remove it. The mayor asks why the fence is there in the first place. When the man says he doesn't know, the mayor says, "If you don't know its purpose, I certainly won't let you remove it. Go and find out the use of it, and then I may let you destroy it."
 
 ### The Dead Sea Effect
 
@@ -968,13 +989,14 @@ See also:
 
 If you have found these concepts interesting, you may enjoy the following books.
 
+- [Clean Code - Robert C. Martin](https://www.goodreads.com/book/show/3735293-clean-code) - One of the most well respected books on how to write clean, maintainable code.
 - [Extreme Programming Installed - Ron Jeffries, Ann Anderson, Chet Hendrikson](https://www.goodreads.com/en/book/show/67834) - Covers the core principles of Extreme Programming.
-- [The Mythical Man Month - Frederick P. Brooks Jr.](https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month) - A classic volume on software engineering. [Brooks' Law](#brooks-law) is a central theme of the book.
 - [Gödel, Escher, Bach: An Eternal Golden Braid - Douglas R. Hofstadter.](https://www.goodreads.com/book/show/24113.G_del_Escher_Bach) - This book is difficult to classify. [Hofstadter's Law](#hofstadters-law) is from the book.
+- [Structure and Interpretation of Computer Programs - Harold Abelson, Gerald Jay Sussman, Julie Sussman](https://www.goodreads.com/book/show/43713) - If you were a comp sci or electical engineering student at MIT or Cambridge this was your intro to programming. Widely reported as being a turning point in people's lives.
 - [The Cathedral and the Bazaar - Eric S. Raymond](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar) - a collection of essays on open source. This book was the source of [Linus's Law](#linuss-law).
 - [The Dilbert Principle - Scott Adams](https://www.goodreads.com/book/show/85574.The_Dilbert_Principle) - A comic look at corporate America, from the author who created the [Dilbert Principle](#the-dilbert-principle).
+- [The Mythical Man Month - Frederick P. Brooks Jr.](https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month) - A classic volume on software engineering. [Brooks' Law](#brooks-law) is a central theme of the book.
 - [The Peter Principle - Lawrence J. Peter](https://www.goodreads.com/book/show/890728.The_Peter_Principle) - Another comic look at the challenges of larger organisations and people management, the source of [The Peter Principle](#the-peter-principle).
-- [Structure and Interpretation of Computer Programs - Harold Abelson, Gerald Jay Sussman, Julie Sussman](https://www.goodreads.com/book/show/43713) - If you were a comp sci or electical engineering student at MIT or Cambridge this was your intro to programming. Widely reported as being a turning point in people's lives.
 
 ## Online Resources
 
