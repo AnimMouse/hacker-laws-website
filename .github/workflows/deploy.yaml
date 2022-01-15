@@ -1,0 +1,29 @@
+name: Deploy Hacker Laws Website
+on:
+  push:
+    paths:
+      - hacker-laws
+      - .github/workflows/deploy.yaml
+  pull_request:
+    paths:
+      - hacker-laws
+      - .github/workflows/deploy.yaml
+      
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+          persist-credentials: false
+          
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./hacker-laws
+          enable_jekyll: true
+          cname: hacker-laws.0000004.xyz
