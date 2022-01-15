@@ -43,6 +43,7 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
     * [The Law of Conservation of Complexity (Tesler's Law)](#the-law-of-conservation-of-complexity-teslers-law)
     * [The Law of Demeter](#the-law-of-demeter)
     * [The Law of Leaky Abstractions](#the-law-of-leaky-abstractions)
+    * [The Law of the Instrument](#the-law-of-the-instrument)
     * [The Law of Triviality](#the-law-of-triviality)
     * [The Unix Philosophy](#the-unix-philosophy)
     * [The Scout Rule](#the-scout-rule)
@@ -588,6 +589,25 @@ See also:
 Real-world examples:
 
 - [Photoshop Slow Startup](https://forums.adobe.com/thread/376152) - an issue I encountered in the past. Photoshop would be slow to startup, sometimes taking minutes. It seems the issue was that on startup it reads some information about the current default printer. However, if that printer is actually a network printer, this could take an extremely long time. The _abstraction_ of a network printer being presented to the system similar to a local printer caused an issue for users in poor connectivity situations.
+
+### The Law of the Instrument
+
+[The Law of the Instrument](https://en.wikipedia.org/wiki/Law_of_the_instrument)
+
+> I call it the law of the instrument, and it may be formulated as follows: Give a small boy a hammer, and he will find that everything he encounters needs pounding.
+>
+> _Abraham Kaplan_
+
+> If all you have is a hammer, everything looks like a nail.
+>
+> _Abraham Maslow_
+
+In the context of computer programming, this law suggests that people tend to use tools that are familiar with, rather than the best possible tool. This over-reliance on a familiar tool is an anti-pattern referred to as 'the golden hammer'.
+
+See also:
+
+- [Avoiding the law of the instrument](https://josemdev.com/avoiding-the-law-of-the-instrument/)
+- [Anti-Pattern - The Golden Hammer](https://archive.org/details/antipatternsrefa0000unse/page/111/mode/2up)
 
 ### The Law of Triviality
 
