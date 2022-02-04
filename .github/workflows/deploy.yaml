@@ -4,6 +4,8 @@ on:
     paths:
       - hacker-laws
       - .github/workflows/deploy.yaml
+    branches-ignore:
+      - dependabot/**
   pull_request:
     paths:
       - hacker-laws
@@ -13,7 +15,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
         with:
           submodules: true
