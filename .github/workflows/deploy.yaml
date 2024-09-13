@@ -21,4 +21,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./hacker-laws
           enable_jekyll: true
-          cname: hacker-laws.44444444.xyz
+          cname: ${{ vars.CNAME }}
