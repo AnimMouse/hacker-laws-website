@@ -10,76 +10,80 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
 
 <!-- vim-markdown-toc GFM -->
 
-* [Introduction](#introduction)
-* [Laws](#laws)
-    * [90–9–1 Principle (1% Rule)](#9091-principle-1-rule)
-    * [Amdahl's Law](#amdahls-law)
-    * [The Broken Windows Theory](#the-broken-windows-theory)
-    * [Brooks' Law](#brooks-law)
-    * [CAP Theorem (Brewer's Theorem)](#cap-theorem-brewers-theorem)
-    * [Clarke's three laws](#clarkes-three-laws)
-    * [Conway's Law](#conways-law)
-    * [Cunningham's Law](#cunninghams-law)
-    * [Dunbar's Number](#dunbars-number)
-    * [The Dunning-Kruger Effect](#the-dunning-kruger-effect)
-    * [Fitts' Law](#fitts-law)
-    * [Gall's Law](#galls-law)
-    * [Goodhart's Law](#goodharts-law)
-    * [Hanlon's Razor](#hanlons-razor)
-    * [Hick's Law (Hick-Hyman Law)](#hicks-law-hick-hyman-law)
-    * [Hofstadter's Law](#hofstadters-law)
-    * [Hutber's Law](#hutbers-law)
-    * [The Hype Cycle & Amara's Law](#the-hype-cycle--amaras-law)
-    * [Hyrum's Law (The Law of Implicit Interfaces)](#hyrums-law-the-law-of-implicit-interfaces)
-    * [Kernighan's Law](#kernighans-law)
-    * [Linus's Law](#linuss-law)
-    * [Metcalfe's Law](#metcalfes-law)
-    * [Moore's Law](#moores-law)
-    * [Murphy's Law / Sod's Law](#murphys-law--sods-law)
-    * [Occam's Razor](#occams-razor)
-    * [Parkinson's Law](#parkinsons-law)
-    * [Premature Optimization Effect](#premature-optimization-effect)
-    * [Putt's Law](#putts-law)
-    * [Reed's Law](#reeds-law)
-    * [The Law of Conservation of Complexity (Tesler's Law)](#the-law-of-conservation-of-complexity-teslers-law)
-    * [The Law of Demeter](#the-law-of-demeter)
-    * [The Law of Leaky Abstractions](#the-law-of-leaky-abstractions)
-    * [The Law of the Instrument](#the-law-of-the-instrument)
-    * [The Law of Triviality](#the-law-of-triviality)
-    * [The Unix Philosophy](#the-unix-philosophy)
-    * [The Scout Rule](#the-scout-rule)
-    * [The Spotify Model](#the-spotify-model)
-    * [The Two Pizza Rule](#the-two-pizza-rule)
-    * [Wadler's Law](#wadlers-law)
-    * [Wheaton's Law](#wheatons-law)
-* [Principles](#principles)
-    * [All Models Are Wrong (George Box's Law)](#all-models-are-wrong-george-boxs-law)
-    * [Chesterton's Fence](#chestertons-fence)
-    * [The Dead Sea Effect](#the-dead-sea-effect)
-    * [The Dilbert Principle](#the-dilbert-principle)
-    * [The Pareto Principle (The 80/20 Rule)](#the-pareto-principle-the-8020-rule)
-    * [The Shirky Principle](#the-shirky-principle)
-    * [The Peter Principle](#the-peter-principle)
-    * [The Robustness Principle (Postel's Law)](#the-robustness-principle-postels-law)
-    * [SOLID](#solid)
-    * [The Single Responsibility Principle](#the-single-responsibility-principle)
-    * [The Open/Closed Principle](#the-openclosed-principle)
-    * [The Liskov Substitution Principle](#the-liskov-substitution-principle)
-    * [The Interface Segregation Principle](#the-interface-segregation-principle)
-    * [The Dependency Inversion Principle](#the-dependency-inversion-principle)
-    * [The DRY Principle](#the-dry-principle)
-    * [The KISS principle](#the-kiss-principle)
-    * [YAGNI](#yagni)
-    * [The Fallacies of Distributed Computing](#the-fallacies-of-distributed-computing)
-    * [The Principle of Least Astonishment](#the-principle-of-least-astonishment)
-* [Reading List](#reading-list)
-* [Online Resources](#online-resources)
-* [PDF eBook](#pdf-ebook)
-* [Podcast](#podcast)
-* [Translations](#translations)
-* [Related Projects](#related-projects)
-* [Contributing](#contributing)
-* [TODO](#todo)
+- [Introduction](#introduction)
+- [Laws](#laws)
+    - [90–9–1 Principle (1% Rule)](#9091-principle-1-rule)
+    - [90–90 Rule](#9090-rule)
+    - [Amdahl's Law](#amdahls-law)
+    - [The Broken Windows Theory](#the-broken-windows-theory)
+    - [Brooks' Law](#brooks-law)
+    - [CAP Theorem (Brewer's Theorem)](#cap-theorem-brewers-theorem)
+    - [Clarke's three laws](#clarkes-three-laws)
+    - [Conway's Law](#conways-law)
+    - [Cunningham's Law](#cunninghams-law)
+    - [Dunbar's Number](#dunbars-number)
+    - [The Dunning-Kruger Effect](#the-dunning-kruger-effect)
+    - [Fitts' Law](#fitts-law)
+    - [Gall's Law](#galls-law)
+    - [Goodhart's Law](#goodharts-law)
+    - [Hanlon's Razor](#hanlons-razor)
+    - [Hick's Law (Hick-Hyman Law)](#hicks-law-hick-hyman-law)
+    - [Hofstadter's Law](#hofstadters-law)
+    - [Hutber's Law](#hutbers-law)
+    - [The Hype Cycle & Amara's Law](#the-hype-cycle--amaras-law)
+    - [Hyrum's Law (The Law of Implicit Interfaces)](#hyrums-law-the-law-of-implicit-interfaces)
+    - [Input-Process-Output (IPO)](#input-process-output-ipo)
+    - [Kernighan's Law](#kernighans-law)
+    - [Linus's Law](#linuss-law)
+    - [Metcalfe's Law](#metcalfes-law)
+    - [Moore's Law](#moores-law)
+    - [Murphy's Law / Sod's Law](#murphys-law--sods-law)
+    - [Occam's Razor](#occams-razor)
+    - [Parkinson's Law](#parkinsons-law)
+    - [Premature Optimization Effect](#premature-optimization-effect)
+    - [Putt's Law](#putts-law)
+    - [Reed's Law](#reeds-law)
+    - [The Ringelmann Effect](#the-ringelmann-effect)
+    - [The Law of Conservation of Complexity (Tesler's Law)](#the-law-of-conservation-of-complexity-teslers-law)
+    - [The Law of Demeter](#the-law-of-demeter)
+    - [The Law of Leaky Abstractions](#the-law-of-leaky-abstractions)
+    - [The Law of the Instrument](#the-law-of-the-instrument)
+    - [The Law of Triviality](#the-law-of-triviality)
+    - [The Unix Philosophy](#the-unix-philosophy)
+    - [The Scout Rule](#the-scout-rule)
+    - [The Spotify Model](#the-spotify-model)
+    - [The Two Pizza Rule](#the-two-pizza-rule)
+    - [Twyman's law](#twymans-law)
+    - [Wadler's Law](#wadlers-law)
+    - [Wheaton's Law](#wheatons-law)
+- [Principles](#principles)
+    - [All Models Are Wrong (George Box's Law)](#all-models-are-wrong-george-boxs-law)
+    - [Chesterton's Fence](#chestertons-fence)
+    - [The Dead Sea Effect](#the-dead-sea-effect)
+    - [The Dilbert Principle](#the-dilbert-principle)
+    - [The Pareto Principle (The 80/20 Rule)](#the-pareto-principle-the-8020-rule)
+    - [The Shirky Principle](#the-shirky-principle)
+    - [The Peter Principle](#the-peter-principle)
+    - [The Robustness Principle (Postel's Law)](#the-robustness-principle-postels-law)
+    - [SOLID](#solid)
+    - [The Single Responsibility Principle](#the-single-responsibility-principle)
+    - [The Open/Closed Principle](#the-openclosed-principle)
+    - [The Liskov Substitution Principle](#the-liskov-substitution-principle)
+    - [The Interface Segregation Principle](#the-interface-segregation-principle)
+    - [The Dependency Inversion Principle](#the-dependency-inversion-principle)
+    - [The DRY Principle](#the-dry-principle)
+    - [The KISS principle](#the-kiss-principle)
+    - [YAGNI](#yagni)
+    - [The Fallacies of Distributed Computing](#the-fallacies-of-distributed-computing)
+    - [The Principle of Least Astonishment](#the-principle-of-least-astonishment)
+- [Reading List](#reading-list)
+- [Online Resources](#online-resources)
+- [PDF eBook](#pdf-ebook)
+- [Podcast](#podcast)
+- [Translations](#translations)
+- [Related Projects](#related-projects)
+- [Contributing](#contributing)
+- [TODO](#todo)
 
 <!-- vim-markdown-toc -->
 
@@ -92,6 +96,7 @@ There are lots of laws which people discuss when talking about development. This
 ## Laws
 
 And here we go!
+
 
 ### 90–9–1 Principle (1% Rule)
 
@@ -106,6 +111,19 @@ Real-world examples:
 See Also:
 
 - [Pareto principle](#the-pareto-principle-the-8020-rule)
+
+### 90–90 Rule
+
+[90-90 Rule on Wikipedia](https://en.wikipedia.org/wiki/Ninety%E2%80%93ninety_rule)
+
+> The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
+
+A wry reinterpretation of the [Pareto Principe (or 80-20 rule)](#the-pareto-principle-the-8020-rule) that highlights the real-world challenges of completing engineering work. This sentiment is also echoed in [Hofstadter's Law](#hofstadters-law).
+
+See also:
+
+- [Hofstadter's Law](#hofstadters-law)
+- [The Pareto Principe](#the-pareto-principle-the-8020-rule)
 
 ### Amdahl's Law
 
@@ -407,6 +425,24 @@ See also:
 - [The Law of Leaky Abstractions](#the-law-of-leaky-abstractions)
 - [XKCD 1172](https://xkcd.com/1172/)
 
+### Input-Process-Output (IPO)
+
+[Input–Process–Output on Wikipedia](https://en.wikipedia.org/wiki/IPO_model)
+
+Systems can be incredibly complex, but can typically be broken down into smaller parts that follow a simple pattern:
+
+1. Input is provided
+2. Some kind of processing or transformation is performed
+3. Output is returned
+
+A sort function in a programming language or system could be a classic example of the IPO pattern; where arbitrary input is sorted based on a predicate and returned back. A web server could be modelled as an IPO system, where HTTP requests are transformed into HTTP responses. A highly complex Generative AI system could likewise be modelled in this way, with user input being passed through a complex model and a response being generated.
+
+The IPO pattern is present in different forms across almost all technological domains, from [functional programming](https://en.wikipedia.org/wiki/Functional_programming) languages that explicitly follow IPO patterns to [The Unix Philosophy](#the-unix-philosophy), which suggests that highly complex systems can be built by chaining together many simple IPO programs.
+
+See also:
+
+- [The Unix Philosophy](#the-unix-philosophy)
+
 ### Kernighan's Law
 
 > Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
@@ -558,6 +594,15 @@ See also:
 - [Metcalfe's Law](#metcalfes-law)
 - [Dunbar's Number](#dunbars-number)
 
+### The Ringelmann Effect
+
+[The Ringelmann effect on Wikipedia](https://en.wikipedia.org/wiki/Ringelmann_effect)
+
+The Ringelmann Effect is the tendency of an individual to become increasingly inefficient as more and more people are involved in a task. In other words, as more individuals are added to a team, the more the average individual performance decreases. Multiple causes are believed to be at work, including loss of motivation ("[social loafing](https://en.wikipedia.org/wiki/Social_loafing)") and challenges related to coordination.
+
+See also:
+- [Brooks' Law](#brooks-law)
+
 ### The Law of Conservation of Complexity (Tesler's Law)
 
 [The Law of Conservation of Complexity on Wikipedia](https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity)
@@ -682,6 +727,18 @@ This rule suggests that regardless of the size of the company, teams should be s
 The number of links between people can be expressed as `n(n-1)/2` where n = number of people.
 
 <img width="200px" alt="Complete graph; Links between people" src="./images/complete_graph.png" />
+
+### Twyman's law
+
+[Twyman's Law on Wikipedia](https://en.wikipedia.org/wiki/Twyman%27s_law)
+
+> The more unusual or interesting the data, the more likely they are to have been the result of an error of one kind or another.
+
+This law suggests that when there are particularly unusual data points, it is more likely that they are the result of errors or manipulation. For example, if a dataset of long-jump results from a sporting event showed a maximum value of 20 meters (more than twice the world record), it is more likely to be due to an error (such as recording a value in feet rather than meters) than due to an unusually long jump. It is also more likely in this case that the results could have been manipulated.
+
+See also:
+
+- [Sagan Standard](#TODO)
 
 ### Wadler's Law
 
