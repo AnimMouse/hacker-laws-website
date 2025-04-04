@@ -1,10 +1,15 @@
-# 💻📖 hacker-laws
+<h1 align="center"><a href="https://hacker-laws.com" target="_blank">hacker-laws</a></h1>
+<h4 align="center">🧠 Laws, Theories, Principles and Patterns for developers and technologists.</h4>
 
-Laws, Theories, Principles and Patterns that developers will find useful.
+---
 
-[Translations](#translations): [🇮🇩](./translations/id.md) [🇧🇷](./translations/pt-BR.md) [🇨🇳](https://github.com/nusr/hacker-laws-zh) [🇩🇪](./translations/de.md) [🇫🇷](./translations/fr.md) [🇬🇷](./translations/el.md) [🇮🇹](https://github.com/csparpa/hacker-laws-it) [🇱🇻](./translations/lv.md) [🇰🇷](https://github.com/codeanddonuts/hacker-laws-kr) [🇵🇱](./translations/pl.md) [🇷🇺](https://github.com/solarrust/hacker-laws) [🇪🇸](./translations/es-ES.md) [🇹🇷](https://github.com/umutphp/hacker-laws-tr) [🇯🇵](./translations/jp.md) [🇺🇦](./translations/uk.md) [🇻🇳](./translations/vi.md)
-
-Like this project? Please considering [sponsoring me](https://github.com/sponsors/dwmkerr) and the [translators](#translations). Also check out this podcast on [The Changelog - Laws for Hackers to Live By](https://changelog.com/podcast/403) to learn more about the project! You can also [download the latest PDF eBook](https://github.com/dwmkerr/hacker-laws/releases/latest/download/hacker-laws.pdf). Check the [Contributor Guide](./.github/contributing.md) if you are keen to contribute!
+- 📖 My new book [Effective Shell (Online Version)](https://effective-shell.com) on [Amazon (Print/Kindle)](https://amzn.to/4ho0F91)
+- 🌍 Try [hacker-laws.com](https://hacker-laws.com)
+- 🧠 Check out my new project [Terminal AI](https://github.com/dwmkerr/terminal-ai)
+- ☕️ Like this project? Consider [buying me a coffee with a one-off donation](https://github.com/sponsors/dwmkerr?frequency=one-time)
+- 🎧 Listen to the podcast [The Changelog - Laws for Hackers to Live By](https://changelog.com/podcast/403)
+- 📖 Download the [PDF eBook](https://github.com/dwmkerr/hacker-laws/releases/latest/download/hacker-laws.pdf)
+- 🌏 See the [Translations](#translations)
 
 ---
 
@@ -34,6 +39,7 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
     - [Hyrum's Law (The Law of Implicit Interfaces)](#hyrums-law-the-law-of-implicit-interfaces)
     - [Input-Process-Output (IPO)](#input-process-output-ipo)
     - [Kernighan's Law](#kernighans-law)
+    - [Koomey's Law](#koomeys-law)
     - [Linus's Law](#linuss-law)
     - [Metcalfe's Law](#metcalfes-law)
     - [Moore's Law](#moores-law)
@@ -43,6 +49,7 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
     - [Premature Optimization Effect](#premature-optimization-effect)
     - [Putt's Law](#putts-law)
     - [Reed's Law](#reeds-law)
+    - [The Bitter Lesson](#the-bitter-lesson)
     - [The Ringelmann Effect](#the-ringelmann-effect)
     - [The Law of Conservation of Complexity (Tesler's Law)](#the-law-of-conservation-of-complexity-teslers-law)
     - [The Law of Demeter](#the-law-of-demeter)
@@ -59,6 +66,7 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
 - [Principles](#principles)
     - [All Models Are Wrong (George Box's Law)](#all-models-are-wrong-george-boxs-law)
     - [Chesterton's Fence](#chestertons-fence)
+    - [Kerckhoffs's principle](#kerckhoffss-principle)
     - [The Dead Sea Effect](#the-dead-sea-effect)
     - [The Dilbert Principle](#the-dilbert-principle)
     - [The Pareto Principle (The 80/20 Rule)](#the-pareto-principle-the-8020-rule)
@@ -80,10 +88,6 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
 - [Online Resources](#online-resources)
 - [PDF eBook](#pdf-ebook)
 - [Podcast](#podcast)
-- [Translations](#translations)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [TODO](#todo)
 
 <!-- vim-markdown-toc -->
 
@@ -91,12 +95,11 @@ Like this project? Please considering [sponsoring me](https://github.com/sponsor
 
 There are lots of laws which people discuss when talking about development. This repository is a reference and overview of some of the most common ones. Please share and submit PRs!
 
-❗: This repo contains an explanation of some laws, principles and patterns, but does not _advocate_ for any of them. Whether they should be applied will always be a matter of debate, and greatly dependent on what you are working on.
+Warning: This repo contains an explanation of some laws, principles and patterns, but does not _advocate_ for any of them. Whether they should be applied will always be a matter of debate, and greatly dependent on what you are working on.
 
 ## Laws
 
-And here we go!
-
+Laws can be opinions on inevitabilities in the world of software engineering, or wry observations on unavoidable realities.
 
 ### 90–9–1 Principle (1% Rule)
 
@@ -137,7 +140,6 @@ The diagram below shows some examples of potential improvements in speed:
 
 <img width="480px" alt="Diagram: Amdahl's Law" src="./images/amdahls_law.png" />
 
-*(Image Reference: By Daniels219 at English Wikipedia, Creative Commons Attribution-Share Alike 3.0 Unported, https://en.wikipedia.org/wiki/File:AmdahlsLaw.svg)*
 
 As can be seen, even a program which is 50% parallelisable will benefit very little beyond 10 processing units, whereas a program which is 95% parallelisable can still achieve significant speed improvements with over a thousand processing units.
 
@@ -270,7 +272,6 @@ As a person's understanding and experience in a domain grows, they may well enco
 
 Real-world examples:
 
-* [Apple vs. FBI: Why This Anti-Terror Hawk Switched Sides](https://fortune.com/2016/03/10/apple-fbi-lindsay-graham/) - In 2016 Senator Lindsey Graham changed his stance on Apple creating a 'backdoor' in their encryption of devices. Initially Graham had been critical of Apple challenging a request to create a 'backdoor', which he saw as necessary to investigate potential terrorist plots. However, by Graham's own admission, as he learned more about the technical complexity of the domain, he realised that he had assumed it to be far more simple than he had realised, and that such a backdoor could have serious negative consequences. This could potentially be considered an example of the Dunning-Kruger effect - a cyber-security expert would likely understand immediately how such a backdoor could be exploited, as they have deep understanding of the domain, a layperson might assume that phone security is more similar to _physical security_ where the practice of having a 'master key' for law enforcement is possible, but this analogy does not apply sufficiently well to describe modern encryption in cyber-security. 
 
 ### Fitts' Law
 
@@ -280,7 +281,6 @@ Fitts' law predicts that the time required to move to a target area is a functio
 
 <img width="300px" alt="Diagram: Fitts Law" src="./images/Fitts_Law.svg" />
 
-*(Image Reference: By Foobar628 at English Wikipedia, Creative Commons Attribution-Share Alike 3.0 Unported, https://en.wikipedia.org/wiki/Fitts%27s_law#/media/File:Fitts_Law.svg)*
 
 The consequences of this law dictate that when designing UX or UI, interactive elements should be as large as possible and the distance between the users attention area and interactive element should be as small as possible. This has consequences on design, such as grouping tasks that are commonly used with one another close.
 
@@ -352,7 +352,6 @@ In the equation below, `T` is the time to make a decision, `n` is the number of 
 
 ![Hicks law](./images/hicks_law.svg)
 
-*(Image Reference: Creative Commons Attribution-Share Alike 3.0 Unported, https://en.wikipedia.org/wiki/Hick%27s_law)*
 
 This law only applies when the number of options is _ordered_, for example, alphabetically. This is implied in the base two logarithm - which implies the decision maker is essentially performing a _binary search_. If the options are not well ordered, experiments show the time taken is linear.
 
@@ -403,7 +402,6 @@ The Hype Cycle is a visual representation of the excitement and development of t
 
 ![The Hype Cycle](./images/gartner_hype_cycle.png)
 
-*(Image Reference: By Jeremykemp at English Wikipedia, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=10547051)*
 
 In short, this cycle suggests that there is typically a burst of excitement around new technology and its potential impact. Teams often jump into these technologies quickly, and sometimes find themselves disappointed with the results. This might be because the technology is not yet mature enough, or real-world applications are not yet fully realised. After a certain amount of time, the capabilities of the technology increase and practical opportunities to use it increase, and teams can finally become productive. Roy Amara's quote sums this up most succinctly - "We tend to overestimate the effect of a technology in the short run and underestimate in the long run".
 
@@ -418,7 +416,6 @@ In short, this cycle suggests that there is typically a burst of excitement arou
 >
 > (Hyrum Wright)
 
-Hyrum's Law states that when you have a _large enough number of consumers_ of an API, all behaviours of the API (even those not defined as part of a public contract) will eventually come to be depended on by someone. A trivial example may be non-functional elements such as the response time of an API. A more subtle example might be consumers who are relying on applying a regex to an error message to determine the *type* of error of an API. Even if the public contract of the API states nothing about the contents of the message, indicating users should use an associated error code, _some_ users may use the message, and changing the message essentially breaks the API for those users.
 
 See also:
 
@@ -461,6 +458,23 @@ See also:
 - [The Unix Philosophy](#the-unix-philosophy)
 - [Occam's Razor](#occams-razor)
 
+### Koomey's Law
+
+[Koomey's Law on Wikipedia](https://en.wikipedia.org/wiki/Koomey%27s_law)
+
+> ...at a fixed computing load, the amount of battery you need will fall by a factor of two every year and a half.
+>
+> (Jonathan Koomey)
+
+In 2010 Professor Jonathan Koomey discovered that the trend in number of computations per joule of energy dissipated had been remarkably stable. This trend became known as Koomey's Law - that the amount of battery needed for a given computing load would half each 2.5 years.
+
+Koomey performed a follow-up analysis in 2010 and found that this trend had slowed, similar to how [Moore's Law](#moores-law) had slowed. This seemed to be related to limitations around how small transistors can be made, as well as [Dennard Scaling](https://en.wikipedia.org/wiki/Dennard_scaling).
+
+See also:
+
+- [Moore's Law](#moores-law)
+- [Dennard Scaling](https://en.wikipedia.org/wiki/Dennard_scaling)
+
 ### Linus's Law
 
 [Linus's Law on Wikipedia](https://en.wikipedia.org/wiki/Linus%27s_law)
@@ -498,6 +512,10 @@ See also:
 > The number of transistors in an integrated circuit doubles approximately every two years.
 
 Often used to illustrate the sheer speed at which semiconductor and chip technology has improved, Moore's prediction has proven to be highly accurate over from the 1970s to the late 2000s. In more recent years, the trend has changed slightly, partly due to [physical limitations on the degree to which components can be miniaturised](https://en.wikipedia.org/wiki/Quantum_tunnelling). However, advancements in parallelisation, and potentially revolutionary changes in semiconductor technology and quantum computing may mean that Moore's Law could continue to hold true for decades to come.
+
+See also:
+
+- [Koomey's Law](#koomeys-law)
 
 ### Murphy's Law / Sod's Law
 
@@ -545,7 +563,6 @@ Example:
 
 In its original context, this Law was based on studies of bureaucracies. It may be pessimistically applied to software development initiatives, the theory being that teams will be inefficient until deadlines near, then rush to complete work by the deadline, thus making the actual deadline somewhat arbitrary.
 
-If this law were combined with [Hofstadter's Law](#hofstadters-law), an even more pessimistic viewpoint is reached - work will expand to fill the time available for its completion and *still take longer than expected*.
 
 See also:
 
@@ -559,7 +576,6 @@ See also:
 >
 > [(Donald Knuth)](https://twitter.com/realdonaldknuth?lang=en)
 
-In Donald Knuth's paper [Structured Programming With Go To Statements](http://wiki.c2.com/?StructuredProgrammingWithGoToStatements), he wrote: "Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: **premature optimization is the root of all evil**. Yet we should not pass up our opportunities in that critical 3%."
 
 However, _Premature Optimization_ can be defined (in less loaded terms) as optimizing before we know that we need to.
 
@@ -593,6 +609,18 @@ This law is based on graph theory, where the utility scales as the number of pos
 See also:
 - [Metcalfe's Law](#metcalfes-law)
 - [Dunbar's Number](#dunbars-number)
+
+### The Bitter Lesson
+
+[The Bitter Lesson by Richard S. Sutton](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
+
+> The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin.
+>
+> Richard S. Sutton (2019)
+
+The "Bitter Lesson", stated by [Rich S. Sutton](https://en.wikipedia.org/wiki/Richard_S._Sutton), says that scale (in terms of both data and computational power) has driven the most significant advancements in AI research, rather than the intricacies of the research methods themselves.
+
+He goes on to suggest that this indicates we should stop trying to build simplified (or even complex) models of the mind as history has shown that these have always in the long term been failures compared to (as an example) scaling the capacity of neural networks and applying existing methods such as convolution.
 
 ### The Ringelmann Effect
 
@@ -635,7 +663,6 @@ Following this principal limits the scope of changes, making them easier and saf
 
 This law states that abstractions, which are generally used in computing to simplify working with complicated systems, will in certain situations 'leak' elements of the underlying system, this making the abstraction behave in an unexpected way.
 
-An example might be loading a file and reading its contents. The file system APIs are an _abstraction_ of the lower level kernel systems, which are themselves an abstraction over the physical processes relating to changing data on a magnetic platter (or flash memory for an SSD). In most cases, the abstraction of treating a file like a stream of binary data will work. However, for a magnetic drive, reading data sequentially will be *significantly* faster than random access (due to increased overhead of page faults), but for an SSD drive, this overhead will not be present. Underlying details will need to be understood to deal with this case (for example, database index files are structured to reduce the overhead of random access), the abstraction 'leaks' implementation details the developer may need to be aware of.
 
 The example above can become more complex when _more_ abstractions are introduced. The Linux operating system allows files to be accessed over a network but represented locally as 'normal' files. This abstraction will 'leak' if there are network failures. If a developer treats these files as 'normal' files, without considering the fact that they may be subject to network latency and failures, the solutions will be buggy.
 
@@ -801,6 +828,22 @@ This principle is relevant in software engineering when removing technical debt.
 
 The name of this principle comes from a story by [G.K. Chesterton](https://en.wikipedia.org/wiki/G._K._Chesterton). A man comes across a fence crossing the middle of the road. He complains to the mayor that this useless fence is getting in the way, and asks to remove it. The mayor asks why the fence is there in the first place. When the man says he doesn't know, the mayor says, "If you don't know its purpose, I certainly won't let you remove it. Go and find out the use of it, and then I may let you destroy it."
 
+### Kerckhoffs's principle
+
+[Kerckhoffs's principle on Wikipedia](https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle)
+
+> "...design your system assuming that your opponents know it in detail."
+>
+> _Steven M. Bellovin's formulation of Kerckhoff's Principle_
+
+This principle of cryptography was an axiom created by cryptographer Auguste Kerckhoffs. He stated that a cryptosystem should be secure, even if everything about the system, except the key, is public knowledge. Not to be confused with [_"security through obscurity"_](#todo).
+
+The gold standard for any secret-keeping system is that implementation details should be publicly distributed, without sacrificing or compromising security of said system.
+
+The history of cryptography has shown that open discussion and analysis of cryptographic systems leads to better and more secure systems - as researchers are able to test for and expose potential vulnerabilities.
+
+- [Shannon's Maxim](#todo)
+
 ### The Dead Sea Effect
 
 [The Dead Sea Effect on Bruce F. Webster](http://brucefwebster.com/2008/04/11/the-wetware-crisis-the-dead-sea-effect/)
@@ -906,11 +949,6 @@ See Also:
 
 This is an acronym, which refers to:
 
-* S: [The Single Responsibility Principle](#the-single-responsibility-principle)
-* O: [The Open/Closed Principle](#the-openclosed-principle)
-* L: [The Liskov Substitution Principle](#the-liskov-substitution-principle)
-* I: [The Interface Segregation Principle](#the-interface-segregation-principle)
-* D: [The Dependency Inversion Principle](#the-dependency-inversion-principle)
 
 These are key principles in [Object-Oriented Programming](#todo). Design principles such as these should be able to aid developers build more maintainable systems.
 
@@ -1035,7 +1073,6 @@ See also:
 
 [YAGNI on Wikipedia](https://en.wikipedia.org/wiki/You_ain%27t_gonna_need_it)
 
-This is an acronym for _**Y**ou **A**in't **G**onna **N**eed **I**t_.
 
 > Always implement things when you actually need them, never when you just foresee that you need them.
 >
@@ -1122,47 +1159,3 @@ Hacker Laws has been featured in [The Changelog](https://changelog.com/podcast/4
 
 <a href="https://changelog.com/podcast/403" target="_blank"><img src="./images/changelog-podcast.png" width="800px" alt="Changelog Podcast Image" /></a>
 
-## Translations
-
-Thanks to a number of wonderful contributors, Hacker Laws is available in a number of languages. Please consider sponsoring moderators!
-
-| Language | Moderator | Status |
-|----------|-----------|--------|
-| [AR Arabic / Arabic](./translations/ar-AR.md) | [Abdurrahman Rajab - a0m0rajab](https://github.com/a0m0rajab) | . |
-| [🇮🇩 Bahasa Indonesia / Indonesian](./translations/pt-BR.md) | [arywidiantara](https://github.com/arywidiantara) | [![gitlocalized ](https://gitlocalize.com/repo/2513/id/badge.svg)](https://gitlocalize.com/repo/2513/id?utm_source=badge) |
-| [🇧🇷 Brasileiro / Brazilian](./translations/pt-BR.md) | [Eugênio Moreira](https://github.com/eugenioamn), [Leonardo Costa](https://github.com/leofc97) | [![gitlocalized ](https://gitlocalize.com/repo/2513/pt-BR/badge.svg)](https://gitlocalize.com/repo/2513/pt-BR?utm_source=badge) |
-| [🇨🇳 中文 / Chinese](https://github.com/nusr/hacker-laws-zh) | [Steve Xu](https://github.com/nusr) | Partially complete |
-| [🇩🇪 Deutsch / German](./translations/de.md) | [Vikto](https://github.com/viktodergunov) | [![gitlocalized ](https://gitlocalize.com/repo/2513/de/badge.svg)](https://gitlocalize.com/repo/2513/de?utm_source=badge) |
-| [🇫🇷 Français / French](./translations/fr.md) | [Kevin Bockelandt](https://github.com/KevinBockelandt) | [![gitlocalized ](https://gitlocalize.com/repo/2513/fr/badge.svg)](https://gitlocalize.com/repo/2513/fr?utm_source=badge) |
-| [🇬🇷 ελληνικά / Greek](./translations/el.md) | [Panagiotis Gourgaris](https://github.com/0gap) | [![gitlocalized ](https://gitlocalize.com/repo/2513/el/badge.svg)](https://gitlocalize.com/repo/2513/el?utm_source=badge) |
-| [🇮🇹 Italiano / Italian](https://github.com/csparpa/hacker-laws-it) | [Claudio Sparpaglione](https://github.com/csparpa) | Partially complete |
-| [🇯🇵 JP 日本語 / Japanese](./translations/jp.md) | [Fumikazu Fujiwara](https://github.com/freddiefujiwara)| [![gitlocalized ](https://gitlocalize.com/repo/2513/ja/badge.svg)](https://gitlocalize.com/repo/2513/ja?utm_source=badge) |
-| [🇰🇷 한국어 / Korean](https://github.com/codeanddonuts/hacker-laws-kr) | [Doughnut](https://github.com/codeanddonuts) | Partially complete |
-| [🇱🇻 Latviešu Valoda / Latvian](./translations/lv.md) | [Arturs Jansons](https://github.com/iegik) | [![gitlocalized ](https://gitlocalize.com/repo/2513/lv/badge.svg)](https://gitlocalize.com/repo/2513/lv?utm_source=badge) |
-| [🇮🇷 فارسی / Persian](./translations/fa.md) | [MohammadErfan Gooneh](https://github.com/MEgooneh) | . |
-| [🇵🇱 Polski / Polish](./translations/pl.md) | [Mariusz Kogen](https://github.com/k0gen) | [![gitlocalized ](https://gitlocalize.com/repo/2513/pl/badge.svg)](https://gitlocalize.com/repo/2513/pl?utm_source=badge) |
-| [🇷🇺 Русская версия / Russian](https://github.com/solarrust/hacker-laws) | [Alena Batitskaya](https://github.com/solarrust) | Partially complete |
-| [🇪🇸 Castellano / Spanish](./translations/es-ES.md) | [Manuel Rubio](https://github.com/manuel-rubio) ([Sponsor](https://github.com/sponsors/manuel-rubio)) | Partially complete |
-| [🇹🇷 Türkçe / Turkish](https://github.com/umutphp/hacker-laws-tr) | [Umut Işık](https://github.com/umutphp) | [![gitlocalized ](https://gitlocalize.com/repo/2513/tr/badge.svg)](https://gitlocalize.com/repo/2513/tr?utm_source=badge) |
-| [🇺🇦 українська мова / Ukrainian](./translations/uk.md) | [Nazar](https://github.com/troyane), [Helga Lastivka](https://github.com/HelgaLastivka) | [![gitlocalized ](https://gitlocalize.com/repo/2513/uk/badge.svg)](https://gitlocalize.com/repo/2513/uk?utm_source=badge) |
-| [🇻🇳 Tiếng Việt / Vietnamese](./translations/vu.md)                      | [Nguyên](https://github.com/truonghoangnguyen), [Trương Hoàng](https://github.com/truonghoangnguyen) | [![gitlocalized ](https://gitlocalize.com/repo/2513/vi/badge.svg)](https://gitlocalize.com/repo/2513/vi?utm_source=badge) |
-
-If you would like to update a translation, follow the [Translators Contributor Guide](https://github.com/dwmkerr/hacker-laws/blob/main/.github/contributing.md#translations).
-
-## Related Projects
-
-- [Tip of the Day](https://tips.darekkay.com/html/hacker-laws-en.html) - Receive a daily hacker law/principle.
-- [Hacker Laws CLI](https://github.com/umutphp/hacker-laws-cli) - List, view and see random laws from the terminal!
-- [Hacker Laws Action](https://github.com/marketplace/actions/hacker-laws-action) - Adds a random Hacker Law to a pull request as a small gift for the contributor, thanks [Umut Işık](https://github.com/umutphp)
-
-## Contributing
-
-Please do contribute! [Raise an issue](https://github.com/dwmkerr/hacker-laws/issues/new) if you'd like to suggest an addition or change, or [Open a pull request](https://github.com/dwmkerr/hacker-laws/compare) to propose your own changes.
-
-Please be sure to read the [Contributing Guidelines](./.github/contributing.md) for requirements on text, style and so on. Please be aware of the [Code of Conduct](./.github/CODE_OF_CONDUCT.md) when engaging in discussions on the project.
-
-## TODO
-
-Hi! If you land here, you've clicked on a link to a topic I've not written up yet, sorry about this - this is work in progress!
-
-Feel free to [Raise an Issue](https://github.com/dwmkerr/hacker-laws/issues) requesting more details, or [Open a Pull Request](https://github.com/dwmkerr/hacker-laws/pulls) to submit your proposed definition of the topic.
