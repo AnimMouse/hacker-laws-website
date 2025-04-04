@@ -1,12 +1,16 @@
 name: Deploy Hacker Laws Website
 on:
   push:
+    branches:
+      - main
     paths:
       - hacker-laws
       - .github/workflows/deploy.yaml
       
 jobs:
   deploy:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -18,7 +22,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ github.token }}
           publish_dir: ./hacker-laws
           enable_jekyll: true
           cname: ${{ vars.CNAME }}
